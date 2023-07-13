@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B89E4FC0-3365-4973-86D6-78B369AE6D08}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QL_CUAHANG_THUCUNG</RootNamespace>
+    <AssemblyName>QL_CUAHANG_THUCUNG</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMINLOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINLOGIN.Designer.cs">
+      <DependentUpon>ADMINLOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BILL_VIPPRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BILL_VIPPRO.Designer.cs">
+      <DependentUpon>BILL_VIPPRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees.Designer.cs">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HOADON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HOADON.Designer.cs">
+      <DependentUpon>HOADON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DATA.cs" />
+    <Compile Include="Pets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pets.Designer.cs">
+      <DependentUpon>Pets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QUYEN.cs" />
+    <Compile Include="ThongTinKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinKH.Designer.cs">
+      <DependentUpon>ThongTinKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinNV.Designer.cs">
+      <DependentUpon>ThongTinNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XuatHD_VIPPRO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XuatHD_VIPPRO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xuathoadon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>xuathoadon.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="ADMINLOGIN.resx">
+      <DependentUpon>ADMINLOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BILL_VIPPRO.resx">
+      <DependentUpon>BILL_VIPPRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees.resx">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HOADON.resx">
+      <DependentUpon>HOADON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pets.resx">
+      <DependentUpon>Pets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ThongTinKH.resx">
+      <DependentUpon>ThongTinKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinNV.resx">
+      <DependentUpon>ThongTinNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XuatHD_VIPPRO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>XuatHD_VIPPRO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xuathoadon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>xuathoadon.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\141513288_106045998153289_4663588629222214239_n.png" />
+    <Content Include="images\35844774.jpg" />
+    <Content Include="images\62-624819_pet-store-cartoon-clipart-pet-shop-hd-png.png" />
+    <Content Include="images\86979257_1572071832931889_5764759844049387520_o.jpg" />
+    <Content Include="images\animals.png" />
+    <Content Include="images\appointment.png" />
+    <Content Include="images\bird.png" />
+    <Content Include="images\cat.png" />
+    <Content Include="images\collar.png" />
+    <Content Include="images\dog.png" />
+    <Content Include="images\Download Pet Shop Icon pack Available in SVG, PNG &amp; Icon fonts.png" />
+    <Content Include="images\fish.png" />
+    <Content Include="images\funny-dog-cute-cat-best-260nw-1241846527.jpg" />
+    <Content Include="images\groomer.png" />
+    <Content Include="images\home.ico" />
+    <Content Include="images\home.png" />
+    <Content Include="images\images.png" />
+    <Content Include="images\invoice.png" />
+    <Content Include="images\logout.png" />
+    <Content Include="images\pet-bowl.png" />
+    <Content Include="images\pet-collar.png" />
+    <Content Include="images\pet-food.png" />
+    <Content Include="images\pet-shop.png" />
+    <Content Include="images\pet.png" />
+    <Content Include="images\placeholder.png" />
+    <Content Include="images\png-clipart-scribblenauts-unlimited-dog-pet-shop-store-animals-retail-thumbnail.png" />
+    <Content Include="images\pngegg.png" />
+    <None Include="Resources\appointment.png" />
+    <None Include="Resources\cat.png" />
+    <None Include="Resources\bird.png" />
+    <None Include="Resources\dog.png" />
+    <None Include="Resources\funny-dog-cute-cat-best-260nw-1241846527.jpg" />
+    <None Include="Resources\collar.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\pngegg.png" />
+    <None Include="Resources\png-clipart-scribblenauts-unlimited-dog-pet-shop-store-animals-retail-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
